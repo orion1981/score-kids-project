@@ -10,3 +10,6 @@
 
 -  
     The final page will be a stat page from the game previously played. That will show team totals and also allow versatility to view individual contributions
+
+-  
+    The project is built with a rails back end API and using a react for client side interface.
