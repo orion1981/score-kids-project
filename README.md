@@ -1,5 +1,6 @@
 # score-kids-project
 
+-
     This web app will allow a user to track a sporting event from the sidelines of a game.  They will be able to update stats of players throughout the game with the click of a button.
 
 -
