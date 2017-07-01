@@ -1,6 +1,7 @@
 class Api::V1::TeamsController < ApplicationController
 
   def index
+
     @teams = Team.all
     render json: @teams
   end
@@ -10,11 +11,18 @@ class Api::V1::TeamsController < ApplicationController
     render json: @team
   end
 
+  def show
+    @team = Team.Find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json {render json: @team}
+    end
+  end
 
   private
 
   def team_params
-    params.require(:team).permit(:name, :location, :mascot, :wins = 0, :losses = 0, :draws = 0)
+    params.require(:team).permit(:name, :location, :mascot, wins: 0, losses: 0, draws: 0)
   end
 
 end
