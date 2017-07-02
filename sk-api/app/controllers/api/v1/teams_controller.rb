@@ -13,6 +13,7 @@ class Api::V1::TeamsController < ApplicationController
 
   def show
     @team = Team.Find(params[:id])
+    # why does this method render json differently
     respond_to do |format|
       format.html
       format.json {render json: @team}
