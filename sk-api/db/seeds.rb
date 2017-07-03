@@ -101,3 +101,100 @@ pops_team = Team.create(
     player_number: 00,
     team_id: 2
     )
+
+
+    coffee_dads_team = Team.create(
+      name: "Coffee",
+      location: "NYC",
+      mascot: "Dads",
+      )
+
+      noahs_dad = Player.create(
+        name: "Noah's Dad",
+        position: "Center",
+        player_number: 13,
+        team_id: 3
+        )
+
+      usman = Player.create(
+        name: "Usman",
+        position: "Left Wing",
+        player_number: 8,
+        team_id: 3
+        )
+
+      kyle = Player.create(
+        name: "Kyle",
+        position: "Right Wing",
+        player_number: 39,
+        team_id: 3
+        )
+
+      mike = Player.create(
+        name: "Mike",
+        position: "Left Defender",
+        player_number: 7,
+        team_id: 3
+        )
+
+      dave = Player.create(
+        name: "Dave",
+        position: "Right Defender",
+        player_number: 53,
+        team_id: 3
+        )
+
+      Craig = Player.create(
+        name: "Craig",
+        position: "Goalie",
+        player_number: 00,
+        team_id: 3
+        )
+
+    nunu_team = Team.create(
+      name: "Nunu",
+      location: "Brooklyn",
+      mascot: "Chocolatiers",
+      )
+
+      andy = Player.create(
+        name: "Andy",
+        position: "Center",
+        player_number: 13,
+        team_id: 4
+        )
+
+      moss = Player.create(
+        name: "Moss",
+        position: "Left Wing",
+        player_number: 8,
+        team_id: 4
+        )
+
+      emmanuel = Player.create(
+        name: "Emmanuel",
+        position: "Right Wing",
+        player_number: 19,
+        team_id: 4
+        )
+
+      kiki = Player.create(
+        name: "Kiki",
+        position: "Left Defender",
+        player_number: 7,
+        team_id: 4
+        )
+
+      ben = Player.create(
+        name: "Ben",
+        position: "Right Defender",
+        player_number: 19,
+        team_id: 4
+        )
+
+      justine = Player.create(
+        name: "Justine",
+        position: "Goalie",
+        player_number: 00,
+        team_id: 4
+        )
