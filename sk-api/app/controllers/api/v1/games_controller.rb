@@ -7,13 +7,17 @@ class Api::V1::GamesController < ApplicationController
 
   def create
     @game = Game.create(game_params)
-    render json: @game
+    params['players'].each do |player|
+
+      PlayerGame.create(player_id: player["player_id"], goals: player["goals"], shots: player["shots"], assists: player["assists"], saves: player["saves"], game_id: @game["id"])
+    end
+    render json: team, include: [:players]
   end
 
   private
 
   def game_params
-    params.require(:game).permit(:date_time, :duration, :location, :home_team_id, :away_team_id, :home_team_score = 0, :away_team_score = 0)
+    params.require(:game).permit!
   end
 
 

@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20170627154106) do
   enable_extension "plpgsql"
 
   create_table "games", force: :cascade do |t|
-    t.integer "date_time"
-    t.integer "duration"
+    t.integer "home_team_shots"
+    t.integer "away_team_shots"
     t.string "location"
     t.integer "home_team_id"
     t.integer "away_team_id"
